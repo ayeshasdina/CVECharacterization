@@ -1,0 +1,355 @@
+Model Name | Noun Group | N-Shot | Macro Avg F1-Score
+------------------------------------------------------
+gpt-4o | Mitigation | 10-shot | 0.8117
+gemini-1.5-flash | AttackTheater | 0-shot | 0.6539
+gemini-1.5-flash | Context | 0-shot | 0.6819
+gemini-1.5-flash | ImpactMethod | 0-shot | 0.7610
+gemini-1.5-flash | LogicalImpact | 0-shot | 0.6559
+gemini-1.5-flash | Mitigation | 0-shot | 0.5391
+gpt-4o | Context | 0-shot | 0.7291
+gpt-4o | ImpactMethod | 0-shot | 0.8390
+gpt-4o | AttackTheater | 0-shot | 0.8339
+gpt-4o | LogicalImpact | 0-shot | 0.7142
+gpt-4o | Mitigation | 0-shot | 0.7883
+meta | AttackTheater | 0-shot | 0.7870
+meta | ImpactMethod | 0-shot | 0.6885
+meta | Context | 0-shot | 0.5670
+meta | LogicalImpact | 0-shot | 0.6806
+meta | Mitigation | 0-shot | 0.7480
+gemini-1.5-flash | AttackTheater | 1-shot | 0.8019
+gemini-1.5-flash | Context | 1-shot | 0.7179
+gemini-1.5-flash | ImpactMethod | 1-shot | 0.8307
+gemini-1.5-flash | LogicalImpact | 1-shot | 0.8010
+gemini-1.5-flash | Mitigation | 1-shot | 0.6050
+gpt-4o | AttackTheater | 1-shot | 0.8589
+gpt-4o | Context | 1-shot | 0.7992
+gpt-4o | ImpactMethod | 1-shot | 0.8628
+gpt-4o | LogicalImpact | 1-shot | 0.7235
+gpt-4o | Mitigation | 1-shot | 0.7940
+meta | AttackTheater | 1-shot | 0.8366
+meta | Context | 1-shot | 0.6444
+meta | ImpactMethod | 1-shot | 0.8472
+meta | Mitigation | 1-shot | 0.8000
+meta | LogicalImpact | 1-shot | 0.7638
+gemini-1.5-flash | LogicalImpact | 10-shot | 0.8313
+gemini-1.5-flash | Mitigation | 10-shot | 0.7645
+gemini-1.5-flash | AttackTheater | 10-shot | 0.8881
+gemini-1.5-flash | Context | 10-shot | 0.7464
+gemini-1.5-flash | ImpactMethod | 10-shot | 0.8693
+gpt-4o | ImpactMethod | 10-shot | 0.9057
+gpt-4o | AttackTheater | 10-shot | 0.9068
+gpt-4o | Context | 10-shot | 0.8001
+gpt-4o | LogicalImpact | 10-shot | 0.7301
+gpt-4o | Mitigation | 10-shot | 0.8117
+gpt-4o | LogicalImpact | 10-shot | 0.7239
+meta | AttackTheater | 10-shot | 0.9105
+meta | Context | 10-shot | 0.7171
+meta | ImpactMethod | 10-shot | 0.8898
+meta | LogicalImpact | 10-shot | 0.7345
+meta | Mitigation | 10-shot | 0.8380
+gemini-1.5-flash | LogicalImpact | 5-shot | 0.8266
+gemini-1.5-flash | Mitigation | 5-shot | 0.7036
+gemini-1.5-flash | AttackTheater | 5-shot | 0.8861
+gemini-1.5-flash | Context | 5-shot | 0.7298
+gemini-1.5-flash | ImpactMethod | 5-shot | 0.8386
+gpt-4o | AttackTheater | 5-shot | 0.9104
+gpt-4o | Context | 5-shot | 0.8015
+gpt-4o | ImpactMethod | 5-shot | 0.8863
+gpt-4o | Mitigation | 5-shot | 0.7788
+gpt-4o | LogicalImpact | 5-shot | 0.7573
+meta | AttackTheater | 5-shot | 0.9037
+meta | Context | 5-shot | 0.7073
+meta | ImpactMethod | 5-shot | 0.8930
+meta | LogicalImpact | 5-shot | 0.7912
+meta | Mitigation | 5-shot | 0.8305
+
+Confusion Matrices:
+gpt-4o | Mitigation | Confusion Matrix: 
+[[[310  19]
+  [  5  86]]
+
+ [[315  15]
+  [ 38  52]]
+
+ [[323   4]
+  [ 55  38]]
+
+ [[323   3]
+  [  8  86]]
+
+ [[335   2]
+  [ 20  63]]]
+gemini-1.5-flash | AttackTheater | Confusion Matrix: 
+[[57  0  1  3]
+ [ 4 46  3  7]
+ [ 2  1 41  0]
+ [ 2  5  0 74]]
+gemini-1.5-flash | Context | Confusion Matrix: 
+[[141   2   0   1   6   1   0]
+ [ 22  63   3   0   4   1   5]
+ [  4   1  92   0   1   0   0]
+ [  2   0   0  60   2  33   1]
+ [  7   0   8   0  82   0   0]
+ [  2   0   1   4   1  89   0]
+ [ 16  11  46   0  10   0  41]]
+gemini-1.5-flash | ImpactMethod | Confusion Matrix: 
+[[89  6  1  0  1]
+ [ 0 80  3  0  0]
+ [ 0  2 58  0  0]
+ [ 1  7  0 66  0]
+ [25  3  0 13 40]]
+gemini-1.5-flash | LogicalImpact | Confusion Matrix: 
+[[[278  22]
+  [ 13  88]]
+
+ [[249  27]
+  [ 13 112]]
+
+ [[283  27]
+  [  3  88]]
+
+ [[302  28]
+  [  0  71]]
+
+ [[322  15]
+  [  4  60]]
+
+ [[290  48]
+  [  0  63]]]
+gemini-1.5-flash | Mitigation | Confusion Matrix: 
+[[[322   7]
+  [ 18  73]]
+
+ [[316  14]
+  [ 30  60]]
+
+ [[326   1]
+  [ 77  16]]
+
+ [[313  13]
+  [ 11  83]]
+
+ [[335   2]
+  [ 30  53]]]
+gpt-4o | Context | Confusion Matrix: 
+[[144   1   1   3   2   0   0]
+ [ 25  64   2   0   2   0   5]
+ [  1   2  94   0   0   0   1]
+ [  0   0   0  88   0   9   1]
+ [  9   2   5   1  76   0   4]
+ [  2   0   2  26   0  67   0]
+ [ 14  11  13   0   4   0  82]]
+gpt-4o | ImpactMethod | Confusion Matrix: 
+[[90  5  0  0  2]
+ [ 0 81  2  0  0]
+ [ 0  4 56  0  0]
+ [ 0  0  0 74  0]
+ [15  2  0 14 50]]
+gpt-4o | AttackTheater | Confusion Matrix: 
+[[60  0  0  1]
+ [ 5 48  1  6]
+ [ 1  1 41  1]
+ [ 2  2  2 75]]
+gpt-4o | LogicalImpact | Confusion Matrix: 
+[[[226  74]
+  [  9  92]]
+
+ [[256  20]
+  [  8 117]]
+
+ [[305   5]
+  [  7  84]]
+
+ [[317  13]
+  [  0  71]]
+
+ [[336   1]
+  [ 55   9]]
+
+ [[319  19]
+  [  0  63]]]
+meta | AttackTheater | Confusion Matrix: 
+[[55  0  0  6]
+ [ 5 49  2  4]
+ [ 0  1 42  1]
+ [ 1  2  2 76]]
+meta | ImpactMethod | Confusion Matrix: 
+[[88  5  0  2  2]
+ [ 0 82  1  0  0]
+ [ 1  6 53  0  0]
+ [ 0  1  0 73  0]
+ [ 8  5  0 11 57]]
+meta | Context | Confusion Matrix: 
+[[139   0   1   0  10   1   0]
+ [ 33  48   6   0   7   0   4]
+ [  1   0  97   0   0   0   0]
+ [  0   0   0  47   2  48   1]
+ [  8   0   9   0  78   1   1]
+ [  2   0   2   0   0  93   0]
+ [ 16   9  40   0   7   0  52]]
+meta | LogicalImpact | Confusion Matrix: 
+[[[264  36]
+  [ 14  87]]
+
+ [[251  25]
+  [ 11 114]]
+
+ [[302   8]
+  [  4  87]]
+
+ [[314  16]
+  [  0  71]]
+
+ [[330   7]
+  [ 35  29]]
+
+ [[282  56]
+  [  0  63]]]
+meta | Mitigation | Confusion Matrix: 
+[[[311  18]
+  [  8  83]]
+
+ [[301  29]
+  [ 13  77]]
+
+ [[288  39]
+  [  9  84]]
+
+ [[306  20]
+  [  3  91]]
+
+ [[331   6]
+  [ 19  64]]]
+
+
+
+
+
+
+ML baseline models:
+
+===== Running ML Models for: AttackTheater =====
+
+Training MultinomialNB for AttackTheater...
+
+Confusion Matrix for MultinomialNB on AttackTheater:
+
+[[ 5  0  0  0]
+ [ 4 30  1  0]
+ [ 2  0  2  0]
+ [12  1  1 52]]
+MultinomialNB Macro F1-score for AttackTheater: 0.66
+
+Training KNN for AttackTheater...
+
+Confusion Matrix for KNN on AttackTheater:
+
+[[ 3  2  0  0]
+ [ 3 31  1  0]
+ [ 0  0  4  0]
+ [ 1  1  1 63]]
+KNN Macro F1-score for AttackTheater: 0.79
+
+===== Running ML Models for: Context =====
+
+Training MultinomialNB for Context...
+
+Confusion Matrix for MultinomialNB on Context:
+
+[[51  0  1  0  3  0  0]
+ [21 15  1  0  2  0  2]
+ [13  1 17  0  3  0  0]
+ [16  0  0 36  3  0  0]
+ [ 5  0  0  0 14  0  0]
+ [19  0  0 10 13 13  1]
+ [22  5  9  0  5  0 19]]
+MultinomialNB Macro F1-score for Context: 0.51
+
+Training KNN for Context...
+
+Confusion Matrix for KNN on Context:
+
+[[41  2  2  3  2  1  4]
+ [ 6 26  2  0  3  0  4]
+ [ 6  3 17  0  6  1  1]
+ [ 1  0  0 46  4  3  1]
+ [ 3  2  1  2 10  0  1]
+ [ 4  0  0  8  4 40  0]
+ [ 9 13  4  0  4  1 29]]
+KNN Macro F1-score for Context: 0.63
+
+===== Running ML Models for: ImpactMethod =====
+
+Training MultinomialNB for ImpactMethod...
+
+Confusion Matrix for MultinomialNB on ImpactMethod:
+
+[[38  1  0  0  0]
+ [ 1 29  2  0  0]
+ [ 1  2 23  0  0]
+ [12  4  0 19  2]
+ [ 5  1  0  1 27]]
+MultinomialNB Macro F1-score for ImpactMethod: 0.81
+
+Training KNN for ImpactMethod...
+
+Confusion Matrix for KNN on ImpactMethod:
+
+[[31  1  2  3  2]
+ [ 1 27  4  0  0]
+ [ 0  3 23  0  0]
+ [ 5  3  3 25  1]
+ [ 2  3  1  3 25]]
+KNN Macro F1-score for ImpactMethod: 0.78
+
+===== Running ML Models for: LogicalImpact =====
+
+Training MultinomialNB for LogicalImpact...
+
+Confusion Matrix for MultinomialNB on LogicalImpact:
+
+[[ 5  0 14  1  0  0]
+ [ 0 21  6  3  0 10]
+ [ 0  2 26  6  1 11]
+ [ 0  0  1 25  0  1]
+ [ 0  8  3  0 11  2]
+ [ 0  3 26 12  2 25]]
+MultinomialNB Macro F1-score for LogicalImpact: 0.51
+
+Training KNN for LogicalImpact...
+
+Confusion Matrix for KNN on LogicalImpact:
+
+[[13  3  4  0  0  0]
+ [ 0 36  1  3  0  0]
+ [ 6 13 13  5  4  5]
+ [ 0  0  3 23  0  1]
+ [ 1 10  2  2  9  0]
+ [ 6 21 13  8  6 14]]
+KNN Macro F1-score for LogicalImpact: 0.48
+
+===== Running ML Models for: Mitigation =====
+
+Training MultinomialNB for Mitigation...
+
+Confusion Matrix for MultinomialNB on Mitigation:
+
+[[10  1  0 23 20]
+ [ 0 27  2  7  2]
+ [ 0  4 20 19  7]
+ [ 0  1  1 23  0]
+ [ 0  0  0  0 23]]
+MultinomialNB Macro F1-score for Mitigation: 0.54
+
+Training KNN for Mitigation...
+
+Confusion Matrix for KNN on Mitigation:
+
+[[29  2  1  8 14]
+ [ 3 23  7  5  0]
+ [ 0 10 29  5  6]
+ [ 2  1  6 15  1]
+ [ 0  0  1  7 15]]
+KNN Macro F1-score for Mitigation: 0.57
+
+===== Summary of Model Performance Across Datasets =====
