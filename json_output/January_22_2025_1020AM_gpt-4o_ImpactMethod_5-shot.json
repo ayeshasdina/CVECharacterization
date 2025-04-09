@@ -1,0 +1,130 @@
+{
+    "metadata": {
+        "timestamp": "January_22_2025_1020AM",
+        "model_name": "gpt-4o",
+        "total_samples": 5,
+        "noun_group": "ImpactMethod",
+        "elapsed_time": "00:00:08.33",
+        "metrics": {
+            "classification_report_str": "                       precision    recall  f1-score   support\n\nAuthentication Bypass       0.50      1.00      0.67         1\n       Code Execution       1.00      1.00      1.00         1\n       Context Escape       1.00      1.00      1.00         1\n    Man-in-the-Middle       1.00      1.00      1.00         1\n        Trust Failure       0.00      0.00      0.00         1\n\n             accuracy                           0.80         5\n            macro avg       0.70      0.80      0.73         5\n         weighted avg       0.70      0.80      0.73         5\n",
+            "classification_report": {
+                "Authentication Bypass": {
+                    "precision": 0.5,
+                    "recall": 1.0,
+                    "f1-score": 0.6666666666666666,
+                    "support": 1.0
+                },
+                "Code Execution": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 1.0
+                },
+                "Context Escape": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 1.0
+                },
+                "Man-in-the-Middle": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1-score": 1.0,
+                    "support": 1.0
+                },
+                "Trust Failure": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1-score": 0.0,
+                    "support": 1.0
+                },
+                "accuracy": 0.8,
+                "macro avg": {
+                    "precision": 0.7,
+                    "recall": 0.8,
+                    "f1-score": 0.7333333333333333,
+                    "support": 5.0
+                },
+                "weighted avg": {
+                    "precision": 0.7,
+                    "recall": 0.8,
+                    "f1-score": 0.7333333333333333,
+                    "support": 5.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "Accuracy (%)": 80.0,
+            "Precision": 0.7,
+            "Recall": 0.8,
+            "F1-Score": 0.7333333333333333
+        }
+    },
+    "data": [
+        {
+            "CVEDescription": "3xLOGIC Infinias eIDC32 2.213 devices with Web 1.107 allow Authentication Bypass via CMD.HTM?CMD= because authentication depends on the client sides interpretation of the <KEY>MYKEY</KEY> substring.",
+            "theirLabels": "Authentication Bypass",
+            "ourLabels": "Authentication Bypass",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "** DISPUTED ** Sandboxie 5.26 allows a Sandbox Escape via an import os statement  followed by os.system(cmd) or os.system(powershell)  within a .py file. NOTE: the vendor disputes this issue because the observed behavior is consistent with the products intended functionality.",
+            "theirLabels": "Context Escape",
+            "ourLabels": "Context Escape",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "** PRODUCT NOT SUPPORTED WHEN ASSIGNED ** Oracle iPlanet Web Server 7.0.x has Incorrect Access Control for admingui/version URIs in the Administration console  as demonstrated by unauthenticated read access to encryption keys. NOTE: a related support policy can be found in the www.oracle.com references attached to this CVE.",
+            "theirLabels": "Trust Failure",
+            "ourLabels": "Authentication Bypass",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "A buffer overflow in the M_LoadDefaults function in m_misc.c in id Tech 1 (aka Doom engine) allows arbitrary code execution via an unsafe usage of fscanf  because it does not limit the number of characters to be read in a format argument.",
+            "theirLabels": "Code Execution",
+            "ourLabels": "Code Execution",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "A Buffer Overflow vulnerability in the khcrypt implementation in Google Earth Pro versions up to and including 7.3.2 allows an attacker to perform a Man-in-the-Middle attack using a specially crafted key to read data past the end of the buffer used to hold it. Mitigation: Update to Google Earth Pro 7.3.3.",
+            "theirLabels": "Man-in-the-Middle",
+            "ourLabels": "Man-in-the-Middle",
+            "modelReasoning": "Reasoning not added."
+        }
+    ]
+}

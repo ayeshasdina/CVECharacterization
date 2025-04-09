@@ -1,0 +1,75 @@
+{
+    "metadata": {
+        "timestamp": "December_19_2024_0734PM",
+        "model_name": "gpt-4o",
+        "total_samples": 10,
+        "metrics": {
+            "Accuracy (%)": 90.0,
+            "Precision": 0.8166666666666668,
+            "Recall": 0.9,
+            "F1-Score": 0.8545454545454545
+        }
+    },
+    "data": [
+        {
+            "CVE Description": "Bad cast in CSS in Google Chrome prior to 11.0.0.0 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "The CVE description indicates that the vulnerability can be exploited by a remote attacker through a crafted HTML page. This aligns with the definition of a Remote attack, where the attack originates from outside the target network, such as through a web browser. The mention of a \"crafted HTML page\" suggests that the attack can be initiated over the internet, which is characteristic of Remote attack vectors."
+        },
+        {
+            "CVE Description": "A hard-coded encryption key vulnerability exists in the authentication functionality of WAGO eCockpit version 1.5.1.1. An attacker with access to communications between eCockpit and CoDeSyS Gateway can trivially recover the password of any user attempting to log in  in plain text.",
+            "theirLabels": "Local",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "The vulnerability involves intercepting communications between eCockpit and CoDeSyS Gateway, which suggests that the attacker needs to be in proximity to the network where these communications occur. This aligns with the \"Limited Remote\" attack theater, where exploits are executed from closer proximity using specific technologies with range constraints, such as wireless networks. The ability to intercept communications indicates a need for access to the network, which is characteristic of Limited Remote attacks."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in V8 in Google Chrome prior to 14.0.0.0 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "The CVE description indicates that the vulnerability can be exploited by a remote attacker through a crafted HTML page. This aligns with the definition of a Remote attack, which involves cyberattacks originating from locations outside the target network, such as public websites or web browsers. The mention of obtaining sensitive information from process memory via a crafted HTML page suggests that the attack can be executed remotely without requiring physical or local access to the system."
+        },
+        {
+            "CVE Description": "HP Systems Insight Manager before 7.0 allows a remote user on adjacent network to access information",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "The CVE description specifies that the vulnerability allows a remote user on an adjacent network to access information. This implies that the attack is not fully remote but requires proximity, such as being on the same local network or subnet, which aligns with the characteristics of a Limited Remote attack."
+        },
+        {
+            "CVE Description": "Integer overflow in the Drive Execution Environment (DXE) phase in the Capsule Update feature in the UEFI implementation in EDK2 allows physically proximate attackers to bypass intended access restrictions via crafted data.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "The CVE description specifies that the vulnerability can be exploited by \"physically proximate attackers,\" indicating that the attacker must have physical access or be in close physical proximity to the target system. This aligns with the definition of the Physical attack theater, where the attacker needs direct physical access to carry out the exploit."
+        },
+        {
+            "CVE Description": "Logitech Unifying devices before 2016-02-26 allow keystroke injection  bypassing encryption  aka MouseJack.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "The CVE description involves keystroke injection in Logitech Unifying devices, which typically use wireless communication (e.g., Bluetooth or proprietary wireless protocols). This type of attack falls under the \"Limited Remote\" category because it involves exploiting wireless communication technologies, which have range constraints and require proximity to the target device."
+        },
+        {
+            "CVE Description": "Edimax Wi-Fi Extender devices allow goform/formwlencryptvxd CSRF with resultant PSK key disclosure.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "The CVE description involves a Wi-Fi extender device, which suggests that the attack is likely executed over a wireless network. This aligns with the \"Limited Remote\" attack theater, which includes exploits initiated through wireless (802.11x) networks. The mention of Wi-Fi and the nature of the device indicate that the attack requires proximity to the wireless network, fitting the Limited Remote category."
+        },
+        {
+            "CVE Description": "An issue was discovered on Samsung mobile devices with M(6.0) software. In the Shade Locked state a physically proximate attacker can read notifications on the lock screen. The Samsung ID is SVE-2016-7132 (December 2016).",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "The CVE description indicates that the vulnerability can be exploited by a \"physically proximate attacker\" who can read notifications on the lock screen. This implies that the attacker needs to have physical access to the device to exploit the vulnerability, which aligns with the definition of a Physical attack theater."
+        },
+        {
+            "CVE Description": "Certain NETGEAR devices are affected by authentication bypass. This affects D6200 before 1.1.00.24  R6700v2 before 1.1.0.42  R6800 before 1.1.0.42  and R6900v2 before 1.1.0.42.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "The CVE description involves an authentication bypass in certain NETGEAR devices. These types of vulnerabilities typically fall under the \"Limited Remote\" category because they often require proximity to the network or device, such as being on the same local network or within range of the device's wireless capabilities, to exploit the vulnerability. This aligns with the characteristics of Limited Remote attacks, which involve exploits executed from closer proximity using specific technologies with range constraints."
+        },
+        {
+            "CVE Description": "NETGEAR WAC510 devices before 5.0.0.17 are affected by authentication bypass.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "The CVE description involves an authentication bypass in NETGEAR WAC510 devices. Given that these are network devices, the vulnerability likely involves an attacker exploiting the device over a network connection. Since the description does not specify a broader remote context, such as the internet, and considering the nature of network devices, it is reasonable to classify this as a Limited Remote attack. This is because the attack likely requires proximity to the network, such as being on the same local network or within wireless range, which aligns with the Limited Remote category."
+        }
+    ]
+}

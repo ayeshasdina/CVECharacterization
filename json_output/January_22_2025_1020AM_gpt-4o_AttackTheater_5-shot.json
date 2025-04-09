@@ -1,0 +1,113 @@
+{
+    "metadata": {
+        "timestamp": "January_22_2025_1020AM",
+        "model_name": "gpt-4o",
+        "total_samples": 5,
+        "noun_group": "AttackTheater",
+        "elapsed_time": "00:00:03.18",
+        "metrics": {
+            "classification_report_str": "              precision    recall  f1-score   support\n\n Limited Rmt       0.00      0.00      0.00         0\n       Local       1.00      0.75      0.86         4\n    Physical       0.00      0.00      0.00         0\n      Remote       0.00      0.00      0.00         1\n\n    accuracy                           0.60         5\n   macro avg       0.25      0.19      0.21         5\nweighted avg       0.80      0.60      0.69         5\n",
+            "classification_report": {
+                "Limited Rmt": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1-score": 0.0,
+                    "support": 0.0
+                },
+                "Local": {
+                    "precision": 1.0,
+                    "recall": 0.75,
+                    "f1-score": 0.8571428571428571,
+                    "support": 4.0
+                },
+                "Physical": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1-score": 0.0,
+                    "support": 0.0
+                },
+                "Remote": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1-score": 0.0,
+                    "support": 1.0
+                },
+                "accuracy": 0.6,
+                "macro avg": {
+                    "precision": 0.25,
+                    "recall": 0.1875,
+                    "f1-score": 0.21428571428571427,
+                    "support": 5.0
+                },
+                "weighted avg": {
+                    "precision": 0.8,
+                    "recall": 0.6,
+                    "f1-score": 0.6857142857142857,
+                    "support": 5.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    3,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    1,
+                    0
+                ]
+            ],
+            "Accuracy (%)": 60.0,
+            "Precision": 0.8,
+            "Recall": 0.6,
+            "F1-Score": 0.6857142857142857
+        }
+    },
+    "data": [
+        {
+            "CVEDescription": "** DISPUTED ** 360 Total Security 3.5.0.1033 allows a Sandbox Escape via an import os statement  followed by os.system(CMD) or os.system(PowerShell)  within a .py file. NOTE: the vendors position is that this cannot be categorized as a vulnerability  although it is a security-related issue.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "A CWE-22: Improper Limitation of a Pathname to a Restricted Directory (Path Traversal) vulnerability exists in EcoStruxure Operator Terminal Expert 3.1 Service Pack 1 and prior (formerly known as Vijeo XD) which could cause malicious code execution when opening the project file.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "A CWE-89: Improper Neutralization of Special Elements used in an SQL Command (SQL Injection) vulnerability exists in EcoStruxure Operator Terminal Expert 3.1 Service Pack 1 and prior (formerly known as Vijeo XD) which could cause malicious code execution when opening the project file.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "A flaw was found in grub2 prior to version 2.06. An attacker may use the GRUB 2 flaw to hijack and tamper the GRUB verification process. This flaw also allows the bypass of Secure Boot protections. In order to load an untrusted or modified kernel an attacker would first need to establish access to the system such as gaining physical access obtain the ability to alter a pxe-boot network or have remote access to a networked system with root access. With this access an attacker could then craft a string to cause a buffer overflow by injecting a malicious payload that leads to arbitrary code execution within GRUB. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+            "theirLabels": "Remote",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "A hard-coded encryption key vulnerability exists in the authentication functionality of WAGO eCockpit version 1.5.1.1. An attacker with access to communications between eCockpit and CoDeSyS Gateway can trivially recover the password of any user attempting to log in  in plain text.",
+            "theirLabels": "Local",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        }
+    ]
+}

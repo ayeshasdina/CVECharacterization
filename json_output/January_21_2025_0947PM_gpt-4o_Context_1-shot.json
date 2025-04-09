@@ -1,0 +1,85 @@
+{
+    "metadata": {
+        "timestamp": "January_21_2025_0947PM",
+        "model_name": "gpt-4o",
+        "total_samples": 5,
+        "noun_group": "Context",
+        "elapsed_time": "00:00:04.55",
+        "metrics": {
+            "classification_report_str": "              precision    recall  f1-score   support\n\n Application       0.00      0.00      0.00         0\n     Host OS       1.00      0.80      0.89         5\n\n    accuracy                           0.80         5\n   macro avg       0.50      0.40      0.44         5\nweighted avg       1.00      0.80      0.89         5\n",
+            "classification_report": {
+                "Application": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1-score": 0.0,
+                    "support": 0.0
+                },
+                "Host OS": {
+                    "precision": 1.0,
+                    "recall": 0.8,
+                    "f1-score": 0.8888888888888888,
+                    "support": 5.0
+                },
+                "accuracy": 0.8,
+                "macro avg": {
+                    "precision": 0.5,
+                    "recall": 0.4,
+                    "f1-score": 0.4444444444444444,
+                    "support": 5.0
+                },
+                "weighted avg": {
+                    "precision": 1.0,
+                    "recall": 0.8,
+                    "f1-score": 0.888888888888889,
+                    "support": 5.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    4
+                ]
+            ],
+            "Accuracy (%)": 80.0,
+            "Precision": 1.0,
+            "Recall": 0.8,
+            "F1-Score": 0.888888888888889
+        }
+    },
+    "data": [
+        {
+            "CVEDescription": "A memory consumption issue was addressed with improved memory handling. This issue is fixed in iOS 13.5.1 and iPadOS 13.5.1  macOS Catalina 10.15.5 Supplemental Update  tvOS 13.4.6  watchOS 6.2.6. An application may be able to execute arbitrary code with kernel privileges.",
+            "theirLabels": "Host OS",
+            "ourLabels": "Host OS",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "A logic issue was addressed with improved restrictions. This issue is fixed in iOS 13.5 and iPadOS 13.5  tvOS 13.4.5  watchOS 6.2.5  Safari 13.1.1  iTunes 12.10.7 for Windows  iCloud for Windows 11.2  iCloud for Windows 7.19. A remote attacker may be able to cause arbitrary code execution.",
+            "theirLabels": "Host OS",
+            "ourLabels": "Host OS",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "An authorization issue was addressed with improved state management. This issue is fixed in iOS 13.5 and iPadOS 13.5. A person with physical access to an iOS device may be able to view notification contents from the lockscreen.",
+            "theirLabels": "Host OS",
+            "ourLabels": "Host OS",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "A double free issue was addressed with improved memory management. This issue is fixed in iOS 13.5 and iPadOS 13.5  macOS Catalina 10.15.5. A remote attacker may be able to cause unexpected system termination or corrupt kernel memory.",
+            "theirLabels": "Host OS",
+            "ourLabels": "Host OS",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "An input validation issue was addressed with improved input validation. This issue is fixed in iOS 13.5 and iPadOS 13.5  tvOS 13.4.5  watchOS 6.2.5  Safari 13.1.1  iTunes 12.10.7 for Windows  iCloud for Windows 11.2  iCloud for Windows 7.19. Processing maliciously crafted web content may lead to a cross site scripting attack.",
+            "theirLabels": "Host OS",
+            "ourLabels": "Application",
+            "modelReasoning": "Reasoning not added."
+        }
+    ]
+}

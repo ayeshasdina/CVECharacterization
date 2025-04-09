@@ -1,0 +1,35 @@
+{
+    "metadata": {
+        "timestamp": "December_27_2024_1238PM",
+        "model_name": "gpt-4o",
+        "total_samples": 3,
+        "metrics": {
+            "Accuracy (%)": 100.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1-Score": 1.0
+        },
+        "noun_group": "Context",
+        "elapsed_time": "00:00:04.30"
+    },
+    "data": [
+        {
+            "CVEDescription": "A memory consumption issue was addressed with improved memory handling. This issue is fixed in iOS 13.5.1 and iPadOS 13.5.1  macOS Catalina 10.15.5 Supplemental Update  tvOS 13.4.6  watchOS 6.2.6. An application may be able to execute arbitrary code with kernel privileges.",
+            "theirLabels": "Host OS",
+            "ourLabels": "Host OS",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "An integer overflow was addressed through improved input validation. This issue is fixed in iOS 13.5 and iPadOS 13.5  macOS Catalina 10.15.5  tvOS 13.4.5  watchOS 6.2.5. A malicious application may be able to execute arbitrary code with kernel privileges.",
+            "theirLabels": "Host OS",
+            "ourLabels": "Host OS",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVEDescription": "A logic issue was addressed with improved restrictions. This issue is fixed in iOS 13.5 and iPadOS 13.5  tvOS 13.4.5  watchOS 6.2.5  Safari 13.1.1  iTunes 12.10.7 for Windows  iCloud for Windows 11.2  iCloud for Windows 7.19. A remote attacker may be able to cause arbitrary code execution.",
+            "theirLabels": "Host OS",
+            "ourLabels": "Host OS",
+            "modelReasoning": "Reasoning not added."
+        }
+    ]
+}

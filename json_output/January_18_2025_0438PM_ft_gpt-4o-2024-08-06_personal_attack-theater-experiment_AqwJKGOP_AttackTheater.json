@@ -1,0 +1,1127 @@
+{
+    "metadata": {
+        "timestamp": "January_18_2025_0438PM",
+        "model_name": "ft:gpt-4o-2024-08-06:personal:attack-theater-experiment:AqwJKGOP",
+        "total_samples": 174,
+        "noun_group": "AttackTheater",
+        "elapsed_time": "00:03:15.35",
+        "metrics": {
+            "classification_report_str": "              precision    recall  f1-score   support\n\n Limited Rmt       0.87      0.87      0.87        23\n       Local       0.77      0.92      0.84        51\n    Physical       0.84      0.94      0.89        17\n      Remote       0.96      0.82      0.88        83\n\n    accuracy                           0.87       174\n   macro avg       0.86      0.89      0.87       174\nweighted avg       0.88      0.87      0.87       174\n",
+            "classification_report": {
+                "Limited Rmt": {
+                    "precision": 0.8695652173913043,
+                    "recall": 0.8695652173913043,
+                    "f1-score": 0.8695652173913043,
+                    "support": 23.0
+                },
+                "Local": {
+                    "precision": 0.7704918032786885,
+                    "recall": 0.9215686274509803,
+                    "f1-score": 0.8392857142857143,
+                    "support": 51.0
+                },
+                "Physical": {
+                    "precision": 0.8421052631578947,
+                    "recall": 0.9411764705882353,
+                    "f1-score": 0.8888888888888888,
+                    "support": 17.0
+                },
+                "Remote": {
+                    "precision": 0.9577464788732394,
+                    "recall": 0.8192771084337349,
+                    "f1-score": 0.8831168831168831,
+                    "support": 83.0
+                },
+                "accuracy": 0.867816091954023,
+                "macro avg": {
+                    "precision": 0.8599771906752818,
+                    "recall": 0.8878968559660637,
+                    "f1-score": 0.8702141759206976,
+                    "support": 174.0
+                },
+                "weighted avg": {
+                    "precision": 0.8799070642952654,
+                    "recall": 0.867816091954023,
+                    "f1-score": 0.8690424358527806,
+                    "support": 174.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    20,
+                    3,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    47,
+                    1,
+                    2
+                ],
+                [
+                    0,
+                    0,
+                    16,
+                    1
+                ],
+                [
+                    2,
+                    11,
+                    2,
+                    68
+                ]
+            ],
+            "Accuracy (%)": 86.7816091954023,
+            "Precision": 0.8799070642952654,
+            "Recall": 0.867816091954023,
+            "F1-Score": 0.8690424358527806
+        }
+    },
+    "data": [
+        {
+            "CVE Description": "In Avast Premium Security 19.8.2393  attackers can send a specially crafted request to the local web server run by Avast Antivirus on port 27275 to support Bank Mode functionality. A flaw in the processing of a command allows execution of arbitrary OS commands with the privileges of the currently logged in user. This allows for example attackers who compromised a browser extension to escape from the browser sandbox.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "A vulnerability was reported in various BIOS versions of older ThinkPad systems that could allow a user with administrative privileges or physical access the ability to update the Embedded Controller with unsigned firmware.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "There is a man-in-the-middle (MITM) vulnerability on Huawei P30 smartphones versions before ELE-AL00 9.1.0.162(C01E160R1P12/C01E160R2P1)  and P30 Pro versions before VOG-AL00 9.1.0.162 (C01E160R1P12/C01E160R2P1). When users establish connection and transfer data through Huawei Share  an attacker could sniff  spoof and do a series of operations to intrude the Huawei Share connection and launch a man-in-the-middle attack to obtain and tamper the data. (Vulnerability ID: HWPSIRT-2019-03109)",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "On BIG-IP 14.1.0-14.1.0.5  14.0.0-14.0.0.4  13.0.0-13.1.1.4  and 12.1.0-12.1.4  under certain circumstances  attackers can decrypt configuration items that are encrypted because the vCMP configuration unit key is generated with insufficient randomness. The attack prerequisite is direct access to encrypted configuration and/or UCS files.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Improper download file verification vulnerability in VAIO Update 7.3.0.03150 and earlier allows remote attackers to conduct a man-in-the-middle attack via a malicous wireless LAN access point. A successful exploitation may result in a malicious file being downloaded/executed.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "A logic issue was addressed with improved restrictions. This issue is fixed in iOS 12.3. A person with physical access to an iOS device may be able to see the email address used for iTunes.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "The issue was addressed by restricting options offered on a locked device. This issue is fixed in iOS 13. A person with physical access to an iOS device may be able to access contacts from the lock screen.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "The issue was addressed by restricting options offered on a locked device. This issue is fixed in iOS 13.1 and iPadOS 13.1. A person with physical access to an iOS device may be able to access contacts from the lock screen.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "The Bluetooth BR/EDR specification up to and including version 5.1 permits sufficiently low encryption key length and does not prevent an attacker from influencing the key length negotiation. This allows practical brute-force attacks (aka KNOB) that can decrypt traffic and inject arbitrary ciphertext without the victim noticing.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Apple iPhone 3GS bootrom malloc implementation returns a non-NULL pointer when unable to allocate memory aka alloc8. An attacker with physical access to the device can install arbitrary firmware.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "An elevation of privilege vulnerability exists when reparse points are created by sandboxed processes allowing sandbox escape  aka Windows NTFS Elevation of Privilege Vulnerability.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Improper input validation in subsystem for Intel(R) AMT versions before 11.8.77 11.12.77 11.22.77 and 12.0.64 may allow an unauthenticated user to potentially enable denial of service or information disclosure via adjacent access.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Improper access control in subsystem for BlueZ before version 5.54 may allow an unauthenticated user to potentially enable escalation of privilege and denial of service via adjacent access",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Improper buffer restrictions in kernel mode driver for Intel(R) PROSet/Wireless WiFi products before version 21.70 on Windows 10 may allow an unprivileged user to potentially enable denial of service via adjacent access.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Improper Access Control in subsystem for Intel(R) TXE versions before 3.175 and 4.0.25 may allow an unauthenticated user to potentially enable escalation of privilege via physical access.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Improper configuration in block design for Intel(R) MAX(R) 10 FPGA all versions may allow an authenticated user to potentially enable escalation of privilege and information disclosure via physical access.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Buffer overflow in Intel(R) Modular Server MFS2600KISPP Compute Module may allow an unauthenticated user to potentially enable denial of service via adjacent access.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient control flow for Intel(R) Modular Server MFS2600KISPP Compute Module may allow an unauthenticated user to potentially enable escalation of privilege via adjacent access.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Improper conditions check for Intel(R) Modular Server MFS2600KISPP Compute Module may allow an unauthenticated user to potentially enable escalation of privilege via adjacent access.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Certain NETGEAR devices are affected by authentication bypass. This affects D6200 before 1.1.00.34  D7000 before 1.0.1.68  JR6150 before 1.0.1.18  PR2000 before 1.0.0.28  R6050 before 1.0.1.18  R6120 before 1.0.0.46  R6220 before 1.1.0.80  R6260 before 1.1.0.64  R6700v2 before 1.2.0.36  R6800 before 1.2.0.36  and R6900v2 before 1.2.0.36.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "The shell subsystem contains a buffer overflow whereby an adversary with physical access to the device is able to cause a memory corruption resulting in denial of service or possibly code execution within the Zephyr kernel. See NCC-NCC-019 This issue affects: zephyrproject-rtos zephyr version 1.14.0 and later versions. version 2.1.0 and later versions.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Legacy pairing and secure-connections pairing authentication in Bluetooth  BR/EDR Core Specification v5.2 and earlier may allow an unauthenticated user to complete authentication without pairing credentials via adjacent access. An unauthenticated adjacent attacker could impersonate a Bluetooth BR/EDR master or slave to pair with a previously paired remote device to successfully complete the authentication procedure without knowing the link key.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "The Telegram application through 5.12 for Android when Show Popup is enabled might allow physically proximate attackers to bypass intended restrictions on message reading and message replying. This might be interpreted as a bypass of the passcode feature.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of D-Link DIR-867  DIR-878  and DIR-882 routers with firmware 1.10B04. Authentication is not required to exploit this vulnerability. The specific flaw exists within the handling of HNAP login requests. The issue results from the lack of proper implementation of the authentication algorithm. An attacker can leverage this vulnerability to escalate privileges and execute code in the context of the router. Was ZDI-CAN-9470.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "A flaw was found in grub2 prior to version 2.06. An attacker may use the GRUB 2 flaw to hijack and tamper the GRUB verification process. This flaw also allows the bypass of Secure Boot protections. In order to load an untrusted or modified kernel an attacker would first need to establish access to the system such as gaining physical access obtain the ability to alter a pxe-boot network or have remote access to a networked system with root access. With this access an attacker could then craft a string to cause a buffer overflow by injecting a malicious payload that leads to arbitrary code execution within GRUB. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",
+            "theirLabels": "Remote",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "The Help feature in the ES File Explorer File Manager application 4.1.9.7.4 for Android allows session hijacking by a Man-in-the-middle attacker on the local network because HTTPS is not used  and an attackers web site is displayed in a WebView with no information about the URL.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Jamf Self Service 10.9.0 allows man-in-the-middle attackers to obtain a root shell by leveraging the publish Bash shell scripts feature to insert /Applications/Utilities/Terminal app/Contents/MacOS/Terminal into the TCP data stream.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of D-Link DIR-867  DIR-878  and DIR-882 routers with firmware 1.10B04. Authentication is not required to exploit this vulnerability. The specific flaw exists within the handling of HNAP login requests. The issue results from the lack of proper handling of empty passwords. An attacker can leverage this vulnerability to execute arbitrary code on the router. Was ZDI-CAN-9471.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Huawei smartphones OxfordP-AN10B with versions earlier than 10.0.1.169(C00E166R4P1) have an improper authentication vulnerability. The Application doesnt perform proper authentication when user performs certain operations. An attacker can trick user into installing a malicious plug-in to exploit this vulnerability. Successful exploit could allow the attacker to bypass the authentication to perform unauthorized operations.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "This vulnerability allows remote attackers to create a denial-of-service condition on affected installations of C-MORE HMI EA9 Firmware version 6.52 touch screen panels. Authentication is not required to exploit this vulnerability. The specific flaw exists within the EA-HTTP.exe process. The issue results from the lack of proper input validation prior to further processing user requests. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-10527.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Certain NETGEAR devices are affected by authentication bypass. This affects JNR1010v2 before 1.1.0.48  JWNR2010v5 before 1.1.0.48  WNR1000v4 before 1.1.0.48  WNR2020 before 1.1.0.48  and WNR2050 before 1.1.0.48.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Huawei P20 smartphones with versions earlier than 10.0.0.156(C00E156R1P4) have an improper authentication vulnerability. The vulnerability is due to that when an user wants to do certain operation  the software insufficiently validate the users identity. Attackers need to physically access the smartphone to exploit this vulnerability. Successful exploit could allow the attacker to bypass the limit of student mode function.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "An elevation of privilege vulnerability exists in ManageEngine ADSelfService Plus before build 6003 because it does not properly enforce user privileges associated with a Certificate dialog. This vulnerability could allow an unauthenticated attacker to escalate privileges on a Windows host. An attacker does not require any privilege on the target system in order to exploit this vulnerability. One option is the self-service option on the Windows login screen. Upon selecting this option the thick-client software is launched which connects to a remote ADSelfService Plus server to facilitate self-service operations. An unauthenticated attacker having physical access to the host could trigger a security alert by supplying a self-signed SSL certificate to the client. The View Certificate option from the security alert allows an attacker to export a displayed certificate to a file. This can further cascade to a dialog that can open Explorer as SYSTEM. By navigating from Explorer to \\windows\\system32 cmd.exe can be launched as a SYSTEM.",
+            "theirLabels": "Remote",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "A specially crafted communication packet sent to the affected devices could allow remote code execution and a denial-of-service condition due to a deserialization vulnerability. This issue affects: Mitsubishi Electric MC Works64 version 4.02C (10.95.208.31) and earlier all versions; Mitsubishi Electric MC Works32 version 3.00A (9.50.255.02); ICONICS GenBroker64 Platform Services Workbench FrameWorX Server version 10.96 and prior; ICONICS GenBroker32 version 9.5 and prior.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Baxter Sigma Spectrum Infusion Pumps Sigma Spectrum Infusion System vs6.x model 35700BAX & Baxter Spectrum Infusion System vs8.x model 35700BAX2 contain hardcoded passwords when physically entered on the keypad provide access to biomedical menus including device settings view calibration values network configuration of Sigma Spectrum WBM if installed.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "In addOrUpdateNetworkInternal and related functions of WifiConfigManager.java  there is a possible man in the middle attack due to improper certificate validation. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10Android ID: A-150500247",
+            "theirLabels": "Local",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "DLL Search Order Hijacking vulnerability in McAfee Agent (MA) prior to 5.6.4 allows attackers with local access to execute arbitrary code via execution from a compromised folder.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Mitsubishi MELSEC iQ-R Series PLCs with firmware 33 allow attackers to halt the industrial process by sending an unauthenticated crafted packet over the network because this denial of service attack consumes excessive CPU time. After halting physical access to the PLC is required in order to restore production.",
+            "theirLabels": "Physical",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "In multiple functions in DrmPlugin.cpp  there is a possible use after free due to a race condition. This could lead to local code execution with System execution privileges required. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10Android ID: A-137878930",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "In AudioStream::decode of AudioGroup.cpp  there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure in the phone process with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10Android ID: A-140054506",
+            "theirLabels": "Local",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "In parseChunk of MPEG4Extractor.cpp  there is a possible out of bounds write due to incompletely initialized data. This could lead to remote code execution with no additional execution privileges needed. User interaction is needed for exploitation.Product: AndroidVersions: Android-10Android ID: A-151159638",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Dell Client Consumer and Commercial platforms include an improper authorization vulnerability in the Dell Manageability interface for which an unauthorized actor  with local system access with OS administrator privileges  could bypass the BIOS Administrator authentication to restore BIOS Setup configuration to default values.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "mwe file parsing in Phoenix Contact PC Worx and PC Worx Express version 1.87 and earlier is vulnerable to out-of-bounds read remote code execution. Manipulated PC Worx projects could lead to a remote code execution due to insufficient input data validation.",
+            "theirLabels": "Local",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "IBM Security Guardium 10.6  11.0  and 11.1 contains hard-coded credentials  such as a password or cryptographic key  which it uses for its own inbound authentication  outbound communication to external components  or encryption of internal data. IBM X-Force ID: 174851.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use of a hard-coded cryptographic key to encrypt security sensitive data in local storage and configuration in FortiClient for Windows prior to 6.4.0 may allow an attacker with access to the local storage or the configuration backup file to decrypt the sensitive data via knowledge of the hard-coded key.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "The web application exposed by the Canon Oce Colorwave 500 4.0.0.0 printer is vulnerable to authentication bypass on the page /home.jsp. An unauthenticated attacker able to connect to the devices web interface can get a copy of the documents uploaded by any users. NOTE: this is fixed in the latest version.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Western Digital SanDisk X300  X300s  X400  and X600 devices: A vulnerability in the wear-leveling algorithm of the drive may cause cryptographically sensitive parameters (such as data encryption keys) to remain on the drive media after their intended erasure.",
+            "theirLabels": "Local",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "IBM MQ IBM MQ Appliance and IBM MQ for HPE NonStop 8.0 9.1 CD and 9.1 LTS is vulnerable to a buffer overflow vulnerability due to an error within the channel processing code. A remote attacker could overflow the buffer using an older client and cause a denial of service. IBM X-Force ID: 181562.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "IBM MQ for HPE NonStop 8.0.4 and 8.1.0 could allow a remote authenticated attacker could cause a denial of service due to an error within the Queue processing function. IBM X-Force ID: 181563.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Affected Dell Client platforms contain a BIOS Setup configuration authentication bypass vulnerability in the pre-boot Intel Rapid Storage Response Technology (iRST) Manager menu. An attacker with physical access to the system could perform unauthorized changes to the BIOS Setup configuration settings without requiring the BIOS Admin password by selecting the Optimized Defaults option in the pre-boot iRST Manager.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Dell EMC Unisphere for PowerMax versions prior to 9.1.0.17 Dell EMC Unisphere for PowerMax Virtual Appliance versions prior to 9.1.0.17 and PowerMax OS Release 5978 contain an improper certificate validation vulnerability. An unauthenticated remote attacker may potentially exploit this vulnerability to carry out a man-in-the-middle attack by supplying a crafted certificate and intercepting the victims traffic to view or modify a victim s data in transit.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Chrome Extension for e-Tax Reception System Ver1.0.0.0 allows remote attackers to execute an arbitrary command via unspecified vectors.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "This vulnerability allows network-adjacent attackers to escalate privileges on affected installations of TP-Link TL-WA855RE Firmware Ver: 855rev4-up-ver1-0-1-P1[20191213-rel60361] Wi-Fi extenders. Although authentication is required to exploit this vulnerability  the existing authentication mechanism can be bypassed. The specific flaw exists within the first-time setup process. The issue results from the lack of proper validation on first-time setup requests. An attacker can leverage this vulnerability to reset the password for the Admin account and execute code in the context of the device. Was ZDI-CAN-10003.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "On versions 15.1.0-15.1.0.1 15.0.0-15.0.1.2 and 14.1.0-14.1.2.3 BIG-IP Virtual Edition (VE) may expose a mechanism for adjacent network (layer 2) attackers to access local daemons and bypass port lockdown settings.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Client side code execution in gitlab-vscode-extension v2.2.0 allows attacker to execute code on user system",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Out of bounds write in V8 in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in V8 in Google Chrome prior to 80.0.3987.162 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in task scheduling in Google Chrome prior to 81.0.4044.129 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in ANGLE in Google Chrome prior to 81.0.4044.122 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Type confusion in Blink in Google Chrome prior to 81.0.4044.138 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in reader mode in Google Chrome on Android prior to 83.0.4103.61 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in media in Google Chrome prior to 83.0.4103.61 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in WebRTC in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Type confusion in V8 in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in developer tools in Google Chrome prior to 83.0.4103.61 allowed an attacker who convinced a user to install a malicious extension to potentially perform a sandbox escape via a crafted Chrome Extension.",
+            "theirLabels": "Remote",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in developer tools in Google Chrome prior to 83.0.4103.61 allowed an attacker who convinced a user to install a malicious extension to obtain potentially sensitive information from process memory or disk via a crafted Chrome Extension.",
+            "theirLabels": "Remote",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in Blink in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in Blink in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Incorrect implementation in full screen in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to spoof security UI via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in tab strip in Google Chrome prior to 83.0.4103.61 allowed an attacker who convinced a user to install a malicious extension to bypass navigation restrictions via a crafted Chrome Extension.",
+            "theirLabels": "Remote",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in installer in Google Chrome on OS X prior to 83.0.4103.61 allowed a local attacker to perform privilege escalation via a crafted file.",
+            "theirLabels": "Remote",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in full screen in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to spoof security UI via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in sharing in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to spoof security UI via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in enterprise in Google Chrome prior to 83.0.4103.61 allowed a local attacker to bypass navigation restrictions via UI actions.",
+            "theirLabels": "Remote",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in URL formatting in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to perform domain spoofing via a crafted domain name.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in developer tools in Google Chrome prior to 83.0.4103.61 allowed an attacker who convinced a user to install a malicious extension to bypass navigation restrictions via a crafted Chrome Extension.",
+            "theirLabels": "Remote",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in payments in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient data validation in ChromeDriver in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to bypass navigation restrictions via a crafted request.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient data validation in media router in Google Chrome prior to 83.0.4103.61 allowed a remote attacker who had compromised the renderer process to bypass navigation restrictions via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in navigations in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in downloads in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in downloads in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in developer tools in Google Chrome prior to 83.0.4103.61 allowed a remote attacker who had convinced the user to take certain actions in developer tools to obtain potentially sensitive information from disk via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient data validation in loader in Google Chrome prior to 83.0.4103.61 allowed a remote attacker who had been able to write to disk to leak cross-origin data via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient data validation in site information in Google Chrome prior to 83.0.4103.61 allowed a remote attacker to spoof security UI via a crafted domain name.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in WebAuthentication in Google Chrome prior to 83.0.4103.97 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Incorrect security UI in payments in Google Chrome on Android prior to 83.0.4103.97 allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in developer tools in Google Chrome prior to 83.0.4103.97 allowed an attacker who convinced a user to install a malicious extension to potentially perform a sandbox escape via a crafted Chrome Extension.",
+            "theirLabels": "Remote",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in payments in Google Chrome on MacOS prior to 83.0.4103.97 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in Omnibox in Google Chrome on iOS prior to 83.0.4103.88 allowed a remote attacker to perform domain spoofing via a crafted URI.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Incorrect implementation in user interface in Google Chrome on iOS prior to 83.0.4103.88 allowed a remote attacker to perform domain spoofing via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in AppCache in Google Chrome prior to 80.0.3987.87 allowed a remote attacker to bypass AppCache security restrictions via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in interstitials in Google Chrome prior to 80.0.3987.87 allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in CSP in Google Chrome prior to 80.0.3987.87 allowed a remote attacker to bypass content security policy via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Incorrect implementation in permissions in Google Chrome prior to 80.0.3987.87 allowed a remote attacker to spoof security UI via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in accessibility in Google Chrome prior to 74.0.3729.108 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in notifications in Google Chrome prior to 74.0.3729.108 allowed a remote attacker to bypass notification restrictions via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in speech in Google Chrome prior to 83.0.4103.106 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in WebView in Google Chrome on Android prior to 83.0.4103.106 allowed a remote attacker to bypass site isolation via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Out of bounds write in V8 in Google Chrome prior to 83.0.4103.106 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in extensions in Google Chrome prior to 83.0.4103.116 allowed an attacker who convinced a user to install a malicious extension to potentially perform a sandbox escape via a crafted Chrome Extension.",
+            "theirLabels": "Remote",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Heap buffer overflow in background fetch in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Information leak in content security policy in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to leak cross-origin data via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Type Confusion in V8 in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Heap buffer overflow in PDFium in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in WebRTC in Google Chrome prior to 84.0.4147.89 allowed an attacker in a privileged network position to potentially exploit heap corruption via a crafted SCTP stream.",
+            "theirLabels": "Remote",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in tab strip in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Policy bypass in CORS in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to leak cross-origin data via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Heap buffer overflow in history in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Use after free in developer tools in Google Chrome prior to 84.0.4147.89 allowed a remote attacker who had convinced the user to use developer tools to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Policy bypass in CSP in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to bypass content security policy via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Buffer overflow in Skia in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Side-channel information leakage in autofill in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in external protocol handlers in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Out of bounds write in Skia in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Heap buffer overflow in WebAudio in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Heap buffer overflow in Skia in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in iframe sandbox in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient policy enforcement in CSP in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to bypass content security policy via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Incorrect security UI in basic auth in Google Chrome on iOS prior to 84.0.4147.89 allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Inappropriate implementation in WebRTC in Google Chrome prior to 84.0.4147.89 allowed an attacker in a privileged network position to leak cross-origin data via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Out of bounds memory access in developer tools in Google Chrome prior to 84.0.4147.89 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension.",
+            "theirLabels": "Remote",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Side-channel information leakage in scroll to text in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to leak cross-origin data via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Type Confusion in V8 in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Heap buffer overflow in WebRTC in Google Chrome prior to 84.0.4147.89 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient data validation in WebUI in Google Chrome prior to 84.0.4147.89 allowed a remote attacker who had compromised the renderer process to inject scripts or HTML into a privileged page via a crafted HTML page.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Incorrect security UI in PWAs in Google Chrome prior to 84.0.4147.89 allowed a remote attacker who had persuaded the user to install a PWA to spoof the contents of the Omnibox (URL bar) via a crafted PWA.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Improper permission or value checking in the CLI console may allow a non-privileged user to obtain Fortinet FortiOS plaint text private keys of systems builtin local certificates via unsetting the keys encryption password in FortiOS 6.2.0  6.0.0 to 6.0.6  5.6.10 and below or for user uploaded local certificates via setting an empty password in FortiOS 6.2.1  6.2.0  6.0.6 and below.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Certain NETGEAR devices are affected by authentication bypass. This affects D6200 before 1.1.00.34  D7000 before 1.0.1.68  PR2000 before 1.0.0.28  R6050 before 1.0.1.18  JR6150 before 1.0.1.18  R6120 before 1.0.0.46  R6220 before 1.1.0.80  R6230 before 1.1.0.80  R6260 before 1.1.0.64  R6700v2 before 1.2.0.36  R6800 before 1.2.0.36  and R6900v2 before 1.2.0.36.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "In FreeBSD 12.1-STABLE before r361918 12.1-RELEASE before p6 11.4-STABLE before r361919 11.3-RELEASE before p10 and 11.4-RC2 before p1 an invalid memory location may be used for HID items if the push/pop level is not restored within the processing of that HID item allowing an attacker with physical access to a USB port to be able to use a specially crafted USB device to gain kernel or user-space code execution.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "An issue was discovered in savestruct_internal.c in FreedroidRPG 1.0rc2. Saved game files are composed of Lua scripts that recover a games state. A file can be modified to put any Lua code inside  leading to arbitrary code execution while loading.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Kata Containers doesnt restrict containers from accessing the guests root filesystem device. Malicious containers can exploit this to gain code execution on the guest and masquerade as the kata-agent. This issue affects Kata Containers 1.11 versions earlier than 1.11.1; Kata Containers 1.10 versions earlier than 1.10.5; and Kata Containers 1.9 and earlier versions.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "A malicious guest compromised before a container creation (e.g. a malicious guest image or a guest running multiple containers) can trick the kata runtime into mounting the untrusted container filesystem on any host path  potentially allowing for code execution on the host. This issue affects: Kata Containers 1.11 versions earlier than 1.11.1; Kata Containers 1.10 versions earlier than 1.10.5; Kata Containers 1.9 and earlier versions.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "A potential vulnerability in the BIOS configuration of some ThinkSystem models due to missing DMA protections that may allow a user with physical access read or write access to system memory.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "IBM Security Guardium 11.1 contains hard-coded credentials  such as a password or cryptographic key  which it uses for its own inbound authentication  outbound communication to external components  or encryption of internal data. IBM X-Force ID: 174732.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Active IQ Unified Manager for Linux versions prior to 9.6 ship with the Java Management Extension Remote Method Invocation (JMX RMI) service enabled allowing unauthorized code execution to local users.",
+            "theirLabels": "Remote",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Royal TS before 5 has a 0.0.0.0 listener  which makes it easier for attackers to bypass tunnel authentication via a brute-force approach.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Insufficient control flow management in firmware build and signing tool for Intel(R) Innovation Engine before version 1.0.859 may allow an unauthenticated user to potentially enable escalation of privilege via physical access.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Certain NETGEAR devices are affected by authentication bypass. This affects GS810EMX before 1.0.0.5  XS512EM before 1.0.0.6  and XS724EM before 1.0.0.6.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "The wireless-communication feature of the ABUS Secvest FUBE50001 device does not encrypt sensitive data such as PIN codes or IDs of used proximity chip keys (RFID tokens). This makes it easier for an attacker to disarm the wireless alarm system.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "An issue was discovered in Zoho ManageEngine AssetExplorer 6.5. During an upgrade of the Windows agent  it does not validate the source and binary downloaded. This allows an attacker on an adjacent network to execute code with NT AUTHORITY/SYSTEM privileges on the agent machines by providing an arbitrary executable via a man-in-the-middle attack.",
+            "theirLabels": "Limited Rmt",
+            "ourLabels": "Limited Rmt",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "NVIDIA Windows GPU Display Driver  all versions  contains a vulnerability in the service host component  in which the application resources integrity check may be missed. Such an attack may lead to code execution  denial of service or information disclosure.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "DLL Search Order Hijacking Vulnerability in the installer component of McAfee Host Intrusion Prevention System (Host IPS) for Windows prior to 8.0.0 Patch 15 Update allows attackers with local access to execute arbitrary code via execution from a compromised folder.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "A CWE-89: Improper Neutralization of Special Elements used in an SQL Command (SQL Injection) vulnerability exists in EcoStruxure Operator Terminal Expert 3.1 Service Pack 1 and prior (formerly known as Vijeo XD) which could cause malicious code execution when opening the project file.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "A CWE-22: Improper Limitation of a Pathname to a Restricted Directory (Path Traversal) vulnerability exists in EcoStruxure Operator Terminal Expert 3.1 Service Pack 1 and prior (formerly known as Vijeo XD) which could cause malicious code execution when opening the project file.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Bridge versions 10.0.1 and earlier version have an out-of-bounds write vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Bridge versions 10.0.1 and earlier version have a stack-based buffer overflow vulnerability. Successful exploitation could lead to arbitrary code execution.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Bridge versions 10.0.1 and earlier version have an out-of-bounds write vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Bridge versions 10.0.1 and earlier version have a heap overflow vulnerability. Successful exploitation could lead to arbitrary code execution.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Bridge versions 10.0.1 and earlier version have a heap overflow vulnerability. Successful exploitation could lead to arbitrary code execution.",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Bridge versions 10.0.1 and earlier version have an out-of-bounds write vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Bridge versions 10.0.1 and earlier version have an out-of-bounds write vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Bridge versions 10.0.1 and earlier version have an use after free vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Bridge versions 10.0.1 and earlier version have an use after free vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Bridge versions 10.0.1 and earlier version have a memory corruption vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Bridge versions 10.0.1 and earlier version have an out-of-bounds write vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Illustrator versions 24.0.2 and earlier have a memory corruption vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Acrobat and Reader versions 2020.006.20042 and earlier  2017.011.30166 and earlier  2017.011.30166 and earlier  and 2015.006.30518 and earlier have an out-of-bounds write vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Acrobat and Reader versions 2020.006.20042 and earlier  2017.011.30166 and earlier  2017.011.30166 and earlier  and 2015.006.30518 and earlier have an out-of-bounds write vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Flash Player Desktop Runtime 32.0.0.371 and earlier Adobe Flash Player for Google Chrome 32.0.0.371 and earlier and Adobe Flash Player for Microsoft Edge and Internet Explorer 32.0.0.330 and earlier have an use after free vulnerability. Successful exploitation could lead to arbitrary code execution.",
+            "theirLabels": "Remote",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Acrobat and Reader versions 2020.006.20042 and earlier  2017.011.30166 and earlier  2017.011.30166 and earlier  and 2015.006.30518 and earlier have a buffer error vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Acrobat and Reader versions 2020.006.20042 and earlier  2017.011.30166 and earlier  2017.011.30166 and earlier  and 2015.006.30518 and earlier have a buffer error vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Acrobat and Reader versions 2020.006.20042 and earlier  2017.011.30166 and earlier  2017.011.30166 and earlier  and 2015.006.30518 and earlier have an use-after-free vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Acrobat and Reader versions 2020.006.20042 and earlier  2017.011.30166 and earlier  2017.011.30166 and earlier  and 2015.006.30518 and earlier have an use-after-free vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Acrobat and Reader versions 2020.006.20042 and earlier  2017.011.30166 and earlier  2017.011.30166 and earlier  and 2015.006.30518 and earlier have a heap overflow vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe After Effects versions 17.1 and earlier have a heap overflow vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe After Effects versions 17.1 and earlier have a heap overflow vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Illustrator versions 24.1.2 and earlier have a memory corruption vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Illustrator versions 24.1.2 and earlier have a memory corruption vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Illustrator versions 24.1.2 and earlier have a memory corruption vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Illustrator versions 24.1.2 and earlier have a buffer errors vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "Adobe Premiere Pro versions 14.2 and earlier have an out-of-bounds read vulnerability. Successful exploitation could lead to arbitrary code execution .",
+            "theirLabels": "Local",
+            "ourLabels": "Local",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "An authorization issue was addressed with improved state management. This issue is fixed in iOS 13.5 and iPadOS 13.5. A person with physical access to an iOS device may be able to view notification contents from the lockscreen.",
+            "theirLabels": "Physical",
+            "ourLabels": "Physical",
+            "modelReasoning": "Reasoning not added."
+        },
+        {
+            "CVE Description": "A logic issue was addressed with improved restrictions. This issue is fixed in iOS 13.5 and iPadOS 13.5 tvOS 13.4.5 watchOS 6.2.5 Safari 13.1.1 iTunes 12.10.7 for Windows iCloud for Windows 11.2 iCloud for Windows 7.19. A remote attacker may be able to cause arbitrary code execution.",
+            "theirLabels": "Remote",
+            "ourLabels": "Remote",
+            "modelReasoning": "Reasoning not added."
+        }
+    ]
+}

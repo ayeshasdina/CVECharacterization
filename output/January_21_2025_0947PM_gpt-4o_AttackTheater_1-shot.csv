@@ -1,0 +1,6 @@
+CVEDescription,theirLabels,ourLabels,modelReasoning
+Bad cast in CSS in Google Chrome prior to 11.0.0.0 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.,Remote,Remote,Reasoning not added.
+A hard-coded encryption key vulnerability exists in the authentication functionality of WAGO eCockpit version 1.5.1.1. An attacker with access to communications between eCockpit and CoDeSyS Gateway can trivially recover the password of any user attempting to log in  in plain text.,Local,Limited Rmt,Reasoning not added.
+Insufficient policy enforcement in V8 in Google Chrome prior to 14.0.0.0 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page.,Remote,Remote,Reasoning not added.
+HP Systems Insight Manager before 7.0 allows a remote user on adjacent network to access information,Limited Rmt,Limited Rmt,Reasoning not added.
+Integer overflow in the Drive Execution Environment (DXE) phase in the Capsule Update feature in the UEFI implementation in EDK2 allows physically proximate attackers to bypass intended access restrictions via crafted data.,Physical,Physical,Reasoning not added.
