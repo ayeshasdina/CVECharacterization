@@ -2,7 +2,8 @@
 
 This repository contains the code and experiments related to the paper:
 
-**"Large Language Models for Automated Characterization of Cybersecurity Vulnerabilities using N-Shot Learning"**
+**["Large Language Models for Automated Characterization of Cybersecurity Vulnerabilities using N-Shot Learning"](https://github.com/ayeshasdina/CVECharacterization/blob/main/FLAIRS_38_79.pdf)**
+
 
 Authored by Ayesha S. Dina, Elijah Needham, and Denis Ulybyshev  
 Presented at the **FLAIRS-38 (2025)** Conference in Daytona Beach, Florida.  
